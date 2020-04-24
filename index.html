@@ -1,0 +1,80 @@
+<html>
+
+ <h2> COVID-19 Visualization</h2>
+  <h1>Click on a country or territory to see cases, deaths, and recoveries.</h1>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" />
+
+<link rel="stylesheet" href="style.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:description" content="COVID-19 3D Visualization." />
+ <div class="container" style="display:flex;flex-direction:row">
+     <div class="card"  style="position:absolute; width:100% !important; display:block;z-index:9999;display: flex;
+    flex-direction: row;">
+
+  <img class="card-img-top" src="" alt="flag">
+  <div class="card-body">
+    <h5 class="card-title">Pick a Country</h5>
+    <p id="deaths" class="card-text"></p>
+   <p id="recovered" class="card-text"></p>
+    <p id="active" class="card-text"></p>
+  </div>
+</div>
+
+
+<canvas id="globe">
+    
+
+
+</canvas>
+
+   
+</div>
+<script src="https://unpkg.com/vanilla-picker"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<script src="https://d3js.org/d3-geo.v1.min.js"></script> 
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+<script src="https://bl.ocks.org/mbostock/raw/7ea1dde508cec6d2d95306f92642bc42/6aac691494f752142a67cc43c51a0fd09896dbd4/versor.js"></script> 
+     <script src="script.js"></script>
+  
+   <div style="display:flex;flex-direction:row;">
+   <div style=" width:100% !important;display:block;z-index:9999999">
+  
+
+      <h2>Set land color</h2>
+      <button href="#" class="button" id="basic" >Pick a color</button>
+     
+  </div>
+  
+    <div style=" width:100% !important; display:block;z-index:999999;">
+   
+
+      <h2>Set Borders' color</h2>
+      <button href="#" class="button" id="basic2">Pick a color</button>
+
+  </div>
+         <div style=" width:100% !important; display:block;z-index:99;">
+   
+
+      <h2>Set Minima Color</h2>
+      <button href="#" class="button" id="basic3">Pick a color</button>
+
+  </div>
+         <div style=" width:100% !important; display:block;z-index:9999;">
+   
+
+      <h2>Set Maxima Color</h2>
+      <button href="#" class="button" id="basic4">Pick a color</button>
+
+  </div>
+     <div>
+   
+
+     </div>
+  </div>
+  </html>

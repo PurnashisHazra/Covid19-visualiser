@@ -1,0 +1,78 @@
+html {
+    text-align: center;
+
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+   background:url("https://images.wallpaperscraft.com/image/starry_sky_night_dark_152039_3840x2160.jpg");
+}
+
+h1{
+  color: #ccc;
+    font-size: 12px;
+}
+h2{
+  color:white;
+  font-size:16px;
+}
+#current {
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+ 
+}
+.card{
+  background: "00000023";
+  display: flex;
+  z-index:999;
+  width:30%;
+  
+}
+.card-img-top{
+   font-family: 'Space Mono', monospace;
+  transition: 0.3s;
+  background: black;
+  width: 10%;
+  max-width:10%;
+  height: 10%;
+  border: 2px solid steelblue;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.card-title {
+  font-weight: bold;
+  color:white;
+}
+.card-text{
+   font-weight: bold;
+  color:white;
+}
+.card-total-cases {
+  font-size: 11px;
+  
+}
+.button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: .5em 1em;
+    min-height: 2em;
+    border: none;
+    outline: none;
+    overflow: visible;
+    
+    background-color: dodgerblue;
+    color: white;
+
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+    
+    &:hover {
+        //background-image: linear-gradient(white, transparent);
+    }
+    &:focus {
+        outline: .3em dashed orange;
+    }
+}
+
